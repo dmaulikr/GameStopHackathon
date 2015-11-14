@@ -20,7 +20,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gtH-Fk-MLd">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="lOj-ag-KTL">
+                            <searchBar contentMode="redraw" placeholder="Current ZipCode 95112" translatesAutoresizingMaskIntoConstraints="NO" id="lOj-ag-KTL">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <color key="backgroundColor" red="0.070136681270000001" green="0.21015451769999999" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <textInputTraits key="textInputTraits"/>

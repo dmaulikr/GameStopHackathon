@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
+@interface ViewController : UIViewController <UITextFieldDelegate,UIPickerViewDataSource,UIPickerViewDelegate, UISearchBarDelegate>
 
+//@property(nonatomic, strong) UIDatePicker* myDatePicker;
+@property(nonatomic, strong) UIPickerView *myPickerView;
+@property(nonatomic, strong) NSArray *pickerArray;
+@property (nonatomic, strong) IBOutlet UISearchBar *searchBar;
+@property(strong, nonatomic, readwrite) UIView *inputView;
 - (IBAction)mostPopularButton:(UIButton *)sender;
 - (IBAction)latestGamesButton:(UIButton *)sender;
 - (IBAction)genreButton:(UIButton *)sender;
