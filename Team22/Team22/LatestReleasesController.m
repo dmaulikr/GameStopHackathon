@@ -54,6 +54,7 @@
     }
     
     cell.gameName.text = ((NSDictionary *)[self.latestRelasesArray objectAtIndex:indexPath.row])[@"DisplayName"];
+    cell.backgroundColor = [UIColor clearColor];
     return cell;
 }
 

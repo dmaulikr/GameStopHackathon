@@ -62,6 +62,7 @@
     UIImage *btnImage = [UIImage imageNamed:@"1.png"];
     [self.button setImage:btnImage forState:UIControlStateNormal];
     [self.moviePlayerController.view addSubview:self.button];
+    self.userTableView.backgroundColor = [UIColor clearColor];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -111,6 +112,7 @@
     
     cell.userName.text = [self.usernamesArray objectAtIndex:indexPath.row];
     cell.userReputation.text = [self.userReputationArray objectAtIndex:indexPath.row];
+    cell.backgroundColor = [UIColor clearColor];
     return cell;
 }
 

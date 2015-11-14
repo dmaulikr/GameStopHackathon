@@ -106,6 +106,7 @@
     
     cell.userName.text = [self.usernamesArray objectAtIndex:indexPath.row];
     cell.userReputation.text = [self.userReputationArray objectAtIndex:indexPath.row];
+    cell.backgroundColor = [UIColor clearColor];
     return cell;
 }
 
