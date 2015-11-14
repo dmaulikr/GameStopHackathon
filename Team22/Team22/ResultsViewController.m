@@ -7,6 +7,7 @@
 //
 
 #import "ResultsViewController.h"
+#import "UserTableViewCell.h"
 
 @interface ResultsViewController () <UITableViewDataSource, UITableViewDelegate>
 @property(nonatomic, strong)UIButton *button ;
@@ -17,13 +18,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.resultsTableView.delegate = self;
-    self.resultsTableView.delegate = self;
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    
+    self.gameNameLabel.text = self.gameName;
+    self.gamePriceLabel.text = [NSString stringWithFormat:@"Price: $%@",self.gamePrice];
+    
+    
+    
     NSString *filepath = [[NSBundle mainBundle] pathForResource:@"videoplayback" ofType:@"mp4"];
     NSURL *fileURL = [NSURL fileURLWithPath:filepath];
    
@@ -53,11 +58,10 @@
     [self.button setImage:btnImage forState:UIControlStateNormal];
     [self.moviePlayerController.view addSubview:self.button];
     
-   
+    self.usernamesArray = [NSArray arrayWithObjects:@"Rand al'Thor", @"Matt Cauthon", @"Perrin Aybara", @"Eric Schindler", @"James Logan", @"Steve Rogers", @"Jason Todd", @"Tim Drake", @"Dick Grayson", @"Wally West", nil];
+    self.userReputationArray = [NSArray arrayWithObjects:@"2312", @"2254", @"2001", @"1974", @"1900", @"1832", @"1755", @"1643", @"1343", @"1145", nil];
     
-    
-    
-   
+    [self.userTableView reloadData];
 }
 
 - (void)introMovieFinished:(NSNotification *)notification
@@ -75,7 +79,6 @@
     
 }
 
-#pragma mark - table View DataSource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
@@ -83,31 +86,28 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5;
+    return [self.usernamesArray count];
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 67;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *userTableViewCellIdentifier = @"UserTableViewCell";
     
+    UserTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:userTableViewCellIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UserTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:userTableViewCellIdentifier];
+    }
+    
+    cell.userName.text = [self.usernamesArray objectAtIndex:indexPath.row];
+    cell.userReputation.text = [self.userReputationArray objectAtIndex:indexPath.row];
     return cell;
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

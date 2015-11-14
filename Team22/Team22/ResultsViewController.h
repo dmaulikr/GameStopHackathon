@@ -10,9 +10,17 @@
 
 @import MediaPlayer;
 
-@interface ResultsViewController : UIViewController
+@interface ResultsViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @property(nonatomic, strong) MPMoviePlayerController* moviePlayerController;
-@property (strong, nonatomic) IBOutlet UITableView *resultsTableView;
+@property (strong, nonatomic) IBOutlet UITableView *userTableView;
 
+@property (strong, nonatomic) NSArray *usernamesArray;
+@property (strong, nonatomic) NSArray *userReputationArray;
+
+@property (strong, nonatomic) NSString *gameName;
+@property (strong, nonatomic) NSString *gamePrice;
+
+@property (weak, nonatomic) IBOutlet UILabel *gameNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *gamePriceLabel;
 @end
