@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D8A27359-04E1-4C4C-909A-A5465C3262AA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Team22</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>818635C4D312EFE0859BEAB8048B227508183D83</key>
+		<string>https://github.com/manav22/GameStopHackathon.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Team22/Team22.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>818635C4D312EFE0859BEAB8048B227508183D83</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/manav22/GameStopHackathon.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>818635C4D312EFE0859BEAB8048B227508183D83</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>818635C4D312EFE0859BEAB8048B227508183D83</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GameStopHackathon</string>
+		</dict>
+	</array>
+</dict>
+</plist>
