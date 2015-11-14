@@ -9,7 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 
+- (IBAction)mostPopularButton:(UIButton *)sender;
+- (IBAction)latestGamesButton:(UIButton *)sender;
+- (IBAction)genreButton:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 

@@ -24,4 +24,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)mostPopularButton:(UIButton *)sender {
+}
+
+- (IBAction)latestGamesButton:(UIButton *)sender {
+}
+
+- (IBAction)genreButton:(UIButton *)sender {
+}
 @end
