@@ -128,6 +128,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="latestReleasesTableView" destination="rsJ-fv-N59" id="Zcq-Co-bsr"/>
+                        <segue destination="ja0-nj-GDU" kind="show" identifier="toResultsViewController" id="ybh-8n-CS1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DzO-sw-Cb9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -169,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FmL-5x-Sf9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="941.5" y="268.5"/>
+            <point key="canvasLocation" x="996.5" y="274.5"/>
         </scene>
     </scenes>
 </document>
