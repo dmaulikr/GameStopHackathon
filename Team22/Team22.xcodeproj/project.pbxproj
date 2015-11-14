@@ -15,6 +15,11 @@
 		B440F72D1BF721DD0052946B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B440F72C1BF721DD0052946B /* Images.xcassets */; };
 		B440F7301BF721DD0052946B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B440F72E1BF721DD0052946B /* LaunchScreen.xib */; };
 		B440F73C1BF721DD0052946B /* Team22Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B440F73B1BF721DD0052946B /* Team22Tests.m */; };
+		B4D7F1101BF73C7F0062570E /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D7F10F1BF73C7F0062570E /* ResultsViewController.m */; };
+		B4D7F1121BF744C90062570E /* videoplayback.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B4D7F1111BF740350062570E /* videoplayback.mp4 */; };
+		B4D7F1161BF749140062570E /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B4D7F1151BF749140062570E /* image.jpg */; };
+		B4D7F1181BF749760062570E /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = B4D7F1171BF749760062570E /* 1.png */; };
+		B4D7F11B1BF751E30062570E /* LatestReleasesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4D7F11A1BF751E30062570E /* LatestReleasesViewController.m */; };
 		B60BB0A3D4FFA2E6BC640FE1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D4101C2B1E937F1DA0932C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +51,13 @@
 		B440F7351BF721DD0052946B /* Team22Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Team22Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B440F73A1BF721DD0052946B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B440F73B1BF721DD0052946B /* Team22Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Team22Tests.m; sourceTree = "<group>"; };
+		B4D7F10E1BF73C7F0062570E /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		B4D7F10F1BF73C7F0062570E /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
+		B4D7F1111BF740350062570E /* videoplayback.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoplayback.mp4; sourceTree = "<group>"; };
+		B4D7F1151BF749140062570E /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		B4D7F1171BF749760062570E /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		B4D7F1191BF751E30062570E /* LatestReleasesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LatestReleasesViewController.h; sourceTree = "<group>"; };
+		B4D7F11A1BF751E30062570E /* LatestReleasesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LatestReleasesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +123,10 @@
 				B440F7211BF721DD0052946B /* AppDelegate.m */,
 				B440F7261BF721DD0052946B /* ViewController.h */,
 				B440F7271BF721DD0052946B /* ViewController.m */,
+				B4D7F1191BF751E30062570E /* LatestReleasesViewController.h */,
+				B4D7F11A1BF751E30062570E /* LatestReleasesViewController.m */,
+				B4D7F10E1BF73C7F0062570E /* ResultsViewController.h */,
+				B4D7F10F1BF73C7F0062570E /* ResultsViewController.m */,
 				B440F7291BF721DD0052946B /* Main.storyboard */,
 				B440F72C1BF721DD0052946B /* Images.xcassets */,
 				B440F72E1BF721DD0052946B /* LaunchScreen.xib */,
@@ -123,6 +139,9 @@
 		B440F71C1BF721DD0052946B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B4D7F1111BF740350062570E /* videoplayback.mp4 */,
+				B4D7F1171BF749760062570E /* 1.png */,
+				B4D7F1151BF749140062570E /* image.jpg */,
 				B440F71D1BF721DD0052946B /* Info.plist */,
 				B440F71E1BF721DD0052946B /* main.m */,
 			);
@@ -228,9 +247,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D7F1121BF744C90062570E /* videoplayback.mp4 in Resources */,
 				B440F72B1BF721DD0052946B /* Main.storyboard in Resources */,
 				B440F7301BF721DD0052946B /* LaunchScreen.xib in Resources */,
+				B4D7F1181BF749760062570E /* 1.png in Resources */,
 				B440F72D1BF721DD0052946B /* Images.xcassets in Resources */,
+				B4D7F1161BF749140062570E /* image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,9 +304,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B440F7221BF721DD0052946B /* AppDelegate.m in Sources */,
+				B4D7F11B1BF751E30062570E /* LatestReleasesViewController.m in Sources */,
 				B440F71F1BF721DD0052946B /* main.m in Sources */,
 				B440F7281BF721DD0052946B /* ViewController.m in Sources */,
 				B440F7251BF721DD0052946B /* Team22.xcdatamodeld in Sources */,
+				B4D7F1101BF73C7F0062570E /* ResultsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
